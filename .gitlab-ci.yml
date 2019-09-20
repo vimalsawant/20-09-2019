@@ -1,0 +1,4 @@
+include:
+  - project: 'one_pdl/gitlab-ci'
+    ref: master
+    file: '/.gitlab-ci-frontend.yml'

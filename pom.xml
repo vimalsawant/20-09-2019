@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.boeing.onepdl.frontend</groupId>
+	<artifactId>onepdl-frontend</artifactId>
+	<version>1.0.0</version>
+	<name>onepdl-frontend</name>
+	<description>This project is for the frontend for onepdl</description>
+
+	<build>
+		<plugins>
+			<!-- sonarqube -->
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.6.0.1398</version>
+			</plugin>
+
+			<!-- build container image for project -->
+			<!-- <plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>1.2.0</version>
+				<configuration>
+					<from>
+						<image>registry.web.boeing.com/container/boeing-images/stack/rhel7-jdk8:7.6-202-8u202</image>
+					</from>
+					<to>
+						<image>registry.web.boeing.com/${IMAGE_NAME}</image>
+						<tags>
+							<tag>${CI_PIPELINE_ID}</tag>
+						</tags>
+						<auth>
+							<username>${CI_REGISTRY_USER}</username>
+							<password>${CI_REGISTRY_PASSWORD}</password>
+						</auth>
+					</to>
+					<container>
+						<useCurrentTimestamp>true</useCurrentTimestamp>
+						<ports>
+							<port>8080</port>
+						</ports>
+					</container>
+				</configuration>
+			</plugin> -->
+		</plugins>
+	</build>
+
+</project>
